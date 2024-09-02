@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT REGISTRATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Registration Form</h1>
+        <form action="register.php" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input type="text" id="phonenumber" name="phonenumber" required pattern="\d{10}" title="Please enter a valid 10-digit phone number">
+
+                <label for="collegename">College Name:</label>
+                <input type="text" id="collegename" name="collegename" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Event Selection</legend>
+                <label for="Tech-event">TECH-EVENT:</label>
+                <select id="Tech-event" name="Tech-event" required>
+                    <option value="Paper Presentation">Paper Presentation</option>
+                    <option value="Coding Contest">Coding Contest</option>
+                    <option value="Debugging">Debugging</option>
+                    <option value="Quizzes">Quizzes</option>
+                    <option value="None">None</option>
+                </select>
+                <label for="NonTech-event">NONTECH-EVENT:</label>
+                <select id="NonTech-event" name="NonTech-event" required>
+                    <option value="Photography event">Photography event</option>
+                    <option value="Workshops">Workshops</option>
+                    <option value="Communication skills">Communication skills</option>
+                    <option value="Video game tournaments">video game tournaments</option>
+                    <option value="None">None</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+        <hr>
+    <p>
+            <center>
+                <a href="https://www.gcee.ac.in/">College Website</a>   
+            </center>
+    </p>    
+    </div>
+</body>
+</html>
